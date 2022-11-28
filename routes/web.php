@@ -68,3 +68,7 @@ Route::post('/galeri/delete/{id}', [GaleriController::class, 'destroy'])->name('
 
 Route::get('/detail-buku/{judul}', [BukuController::class, 'galbuku'])->name('galeri.buku');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
